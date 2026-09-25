@@ -19,6 +19,7 @@ const buttonConfig = {
       outline: "border border-border bg-transparent hover:bg-muted",
       link: "text-primary underline-offset-4 hover:underline bg-transparent p-0 h-auto",
       ghost: "hover:bg-muted",
+      gold: "rounded-none bg-gold font-semibold uppercase tracking-[0.2em] text-white hover:bg-gold-dark",
     },
     icon: {
       true: "p-0 rounded-full",
