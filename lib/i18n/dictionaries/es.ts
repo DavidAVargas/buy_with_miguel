@@ -34,6 +34,35 @@ const es: Dictionary = {
       "Bilingüe · Español e Inglés",
     ],
   },
+  services: {
+    eyebrow: "Cómo Te Puedo Ayudar",
+    title: "Servicios de Bienes Raíces",
+    intro:
+      "Un agente de confianza para cada paso, ya sea que estés comprando, vendiendo, rentando o invirtiendo en Central Jersey.",
+    cta: "Comenzar",
+    items: [
+      {
+        icon: "buy",
+        title: "Comprar una Casa",
+        body: "Desde compradores de primera vez hasta familias en crecimiento: encuentra la casa ideal, negocia el mejor precio y cierra con confianza.",
+      },
+      {
+        icon: "sell",
+        title: "Vender tu Casa",
+        body: "Precio estratégico, marketing profesional y exposición en redes sociales para vender tu casa rápido y al mejor precio.",
+      },
+      {
+        icon: "rent",
+        title: "Rentas",
+        body: "¿Buscas apartamento o tienes una propiedad para rentar? Conectamos inquilinos y propietarios rápidamente, desde la visita hasta el contrato firmado.",
+      },
+      {
+        icon: "commercial",
+        title: "Comercial",
+        body: "Locales, oficinas, uso mixto y propiedades de inversión para dueños de negocios e inversionistas que buscan el espacio ideal.",
+      },
+    ],
+  },
 };
 
 export default es;

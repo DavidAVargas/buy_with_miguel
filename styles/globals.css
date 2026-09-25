@@ -7,6 +7,11 @@
 @custom-variant dark (&:is(.dark *));
 
 @layer base {
+  html {
+    /* Keep anchored sections clear of the sticky header. */
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+  }
   * {
     @apply outline-ring/50;
   }

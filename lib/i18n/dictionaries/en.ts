@@ -32,6 +32,35 @@ const en = {
       "Bilingual · English & Español",
     ],
   },
+  services: {
+    eyebrow: "How I Can Help",
+    title: "Real Estate Services",
+    intro:
+      "One trusted agent for every move, whether you're buying, selling, renting, or investing in Central Jersey.",
+    cta: "Get Started",
+    items: [
+      {
+        icon: "buy",
+        title: "Buy a Home",
+        body: "From first-time buyers to growing families: find the right home, negotiate the best price, and close with confidence.",
+      },
+      {
+        icon: "sell",
+        title: "Sell Your Home",
+        body: "Strategic pricing, professional marketing, and social media exposure to get your home sold fast and for top dollar.",
+      },
+      {
+        icon: "rent",
+        title: "Rentals",
+        body: "Looking for an apartment or have a property to lease? Renters and landlords get matched quickly, from showing to signed lease.",
+      },
+      {
+        icon: "commercial",
+        title: "Commercial",
+        body: "Retail, office, mixed-use, and investment properties for business owners and investors looking for the right space.",
+      },
+    ],
+  },
 };
 
 export default en;
