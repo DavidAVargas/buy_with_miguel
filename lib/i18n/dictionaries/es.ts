@@ -21,6 +21,19 @@ const es: Dictionary = {
     closeMenu: "Cerrar menú",
     switchLanguage: "View in English",
   },
+  hero: {
+    eyebrow: "Compra · Vende · Renta en New Jersey",
+    title: "Casas en Central Jersey",
+    body: "Ya sea que estés comprando tu primera casa, vendiendo al mejor precio o buscando tu próxima renta, Miguel te acompaña en cada paso, residencial o comercial, en español o inglés.",
+    primaryCta: "Hablemos",
+    secondaryCta: "¿Cuánto Vale Mi Casa?",
+    imageAlt: "Casa clásica de New Jersey con porche y jardín",
+    highlights: [
+      "Residencial y Comercial",
+      "Compradores · Vendedores · Inquilinos",
+      "Bilingüe · Español e Inglés",
+    ],
+  },
 };
 
 export default es;

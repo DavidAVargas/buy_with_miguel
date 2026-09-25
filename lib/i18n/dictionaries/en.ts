@@ -19,6 +19,19 @@ const en = {
     closeMenu: "Close menu",
     switchLanguage: "Ver en español",
   },
+  hero: {
+    eyebrow: "Buy · Sell · Rent in New Jersey",
+    title: "Homes in Central Jersey",
+    body: "Whether you're buying your first home, selling for top dollar, or finding your next rental, Miguel guides you through every step, residential or commercial, in English or Spanish.",
+    primaryCta: "Let's Talk",
+    secondaryCta: "What's My Home Worth?",
+    imageAlt: "Classic New Jersey home with a front porch and landscaped yard",
+    highlights: [
+      "Residential & Commercial",
+      "Buyers · Sellers · Renters",
+      "Bilingual · English & Español",
+    ],
+  },
 };
 
 export default en;
