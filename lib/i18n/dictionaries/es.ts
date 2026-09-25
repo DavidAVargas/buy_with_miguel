@@ -81,6 +81,25 @@ const es: Dictionary = {
     baths: "baños",
     perMonth: "/mes",
   },
+  about: {
+    eyebrow: "Conoce a Miguel",
+    title: "Bienes Raíces con Trato Personal",
+    body: [
+      "Hola, soy Miguel Hernandez, REALTOR® bilingüe con Halo Realty y orgulloso miembro de Key Move Real Estate Group. Ayudo a familias, compradores de primera vez, inversionistas y dueños de negocios en Central Jersey a comprar, vender y rentar con confianza.",
+      "Ya sea tu primer apartamento o la casa de tus sueños, estoy aquí para responder tus preguntas, luchar por el mejor trato y hacer el proceso sencillo, en español o in English.",
+    ],
+    values: [
+      "Hablo español e inglés",
+      "Residencial y comercial",
+      "Comunicación rápida y honesta",
+      "Conozco Central Jersey",
+    ],
+    brokerage: "Correduría",
+    team: "Equipo",
+    call: "Llama o Textea a Miguel",
+    photoAlt: "Miguel Hernandez, REALTOR®",
+    photoSoon: "Foto próximamente",
+  },
 };
 
 export default es;

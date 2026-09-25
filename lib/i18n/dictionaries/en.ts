@@ -78,6 +78,25 @@ const en = {
     baths: "ba",
     perMonth: "/mo",
   },
+  about: {
+    eyebrow: "Meet Miguel",
+    title: "Real Estate, Made Personal",
+    body: [
+      "Hi, I'm Miguel Hernandez, a bilingual REALTOR® with Halo Realty and a proud member of the Key Move Real Estate Group. I help families, first-time buyers, investors, and business owners across Central Jersey buy, sell, and rent with confidence.",
+      "Whether it's your first apartment or your forever home, I'm here to answer your questions, fight for your best deal, and keep the process simple, in English or en español.",
+    ],
+    values: [
+      "Fluent in English & Spanish",
+      "Residential & commercial",
+      "Fast, honest communication",
+      "Central Jersey local",
+    ],
+    brokerage: "Brokerage",
+    team: "Team",
+    call: "Call or Text Miguel",
+    photoAlt: "Miguel Hernandez, REALTOR®",
+    photoSoon: "Photo coming soon",
+  },
 };
 
 export default en;
