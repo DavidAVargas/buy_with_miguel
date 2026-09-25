@@ -137,6 +137,15 @@ const en = {
     call: "Call",
     text: "Text",
   },
+  footer: {
+    tagline:
+      "Helping Central Jersey buy, sell, and rent, in English and Spanish.",
+    explore: "Explore",
+    contact: "Contact",
+    brokerage: "Brokerage",
+    equalHousing: "Equal Housing Opportunity",
+    rights: "All rights reserved.",
+  },
 };
 
 export default en;

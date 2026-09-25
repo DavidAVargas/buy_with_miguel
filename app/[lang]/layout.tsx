@@ -40,7 +40,7 @@ export default async function RootLayout({
         <TopBar dict={dict.topbar} />
         <Header lang={lang} dict={dict.nav} />
         <main>{children}</main>
-        <Footer />
+        <Footer lang={lang} dict={dict} />
         <CallBar dict={dict.callBar} />
       </body>
     </html>

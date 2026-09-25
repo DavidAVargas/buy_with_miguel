@@ -140,6 +140,15 @@ const es: Dictionary = {
     call: "Llamar",
     text: "Textear",
   },
+  footer: {
+    tagline:
+      "Ayudando a Central Jersey a comprar, vender y rentar, en español e inglés.",
+    explore: "Explorar",
+    contact: "Contacto",
+    brokerage: "Correduría",
+    equalHousing: "Igualdad de Oportunidades en la Vivienda",
+    rights: "Todos los derechos reservados.",
+  },
 };
 
 export default es;
