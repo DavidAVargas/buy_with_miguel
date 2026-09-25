@@ -61,6 +61,23 @@ const en = {
       },
     ],
   },
+  sold: {
+    eyebrow: "Recent Wins",
+    title: "Sold & Leased",
+    intro: "A few of the families and businesses I've helped move forward.",
+    instagram: "See more on Instagram",
+    status: { sold: "Sold", leased: "Leased" },
+    kinds: {
+      singleFamily: "Single-Family",
+      multiFamily: "Multi-Family",
+      apartment: "Apartment",
+      commercial: "Commercial",
+    },
+    beds: "bd",
+    bath: "ba",
+    baths: "ba",
+    perMonth: "/mo",
+  },
 };
 
 export default en;

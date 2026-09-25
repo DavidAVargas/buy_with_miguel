@@ -63,6 +63,24 @@ const es: Dictionary = {
       },
     ],
   },
+  sold: {
+    eyebrow: "Logros Recientes",
+    title: "Vendidas y Rentadas",
+    intro:
+      "Algunas de las familias y negocios que he ayudado a dar el siguiente paso.",
+    instagram: "Ver más en Instagram",
+    status: { sold: "Vendida", leased: "Rentada" },
+    kinds: {
+      singleFamily: "Unifamiliar",
+      multiFamily: "Multifamiliar",
+      apartment: "Apartamento",
+      commercial: "Comercial",
+    },
+    beds: "hab",
+    bath: "baño",
+    baths: "baños",
+    perMonth: "/mes",
+  },
 };
 
 export default es;
