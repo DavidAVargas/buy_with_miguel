@@ -1,0 +1,29 @@
+// Single source of truth for Miguel's contact + brokerage details.
+// TODO: replace placeholder phone, email, and license once received.
+export const site = {
+  name: "Miguel Hernandez",
+  title: "REALTOR®",
+  brokerage: "Halo Realty",
+  team: "Key Move Real Estate Group",
+  phone: "(732) 555-0100",
+  phoneHref: "tel:+17325550100",
+  smsHref: "sms:+17325550100",
+  email: "hello@buywithmiguel.com",
+  license: "NJ License #0000000",
+  state: "New Jersey",
+  social: {
+    instagram: "https://www.instagram.com/buywithmiguel",
+    tiktok: "https://www.tiktok.com/@buywithmiguel",
+    team: "https://www.instagram.com/keymoverealestate",
+  },
+  areas: [
+    "Perth Amboy",
+    "South Amboy",
+    "Sayreville",
+    "Old Bridge",
+    "Woodbridge",
+    "Edison",
+    "Carteret",
+    "Keyport",
+  ],
+} as const;
