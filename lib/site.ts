@@ -18,14 +18,24 @@ export const site = {
     tiktok: "https://www.tiktok.com/@buywithmiguel",
     team: "https://www.instagram.com/keymoverealestate",
   },
+  // TODO: confirm the towns Miguel actually covers.
   areas: [
-    "Perth Amboy",
-    "South Amboy",
-    "Sayreville",
-    "Old Bridge",
-    "Woodbridge",
-    "Edison",
-    "Carteret",
-    "Keyport",
+    {
+      county: "Middlesex",
+      towns: [
+        "Perth Amboy",
+        "South Amboy",
+        "Sayreville",
+        "Old Bridge",
+        "Woodbridge",
+        "Edison",
+        "Carteret",
+        "New Brunswick",
+      ],
+    },
+    {
+      county: "Monmouth",
+      towns: ["Keyport", "Hazlet", "Aberdeen", "Matawan"],
+    },
   ],
 } as const;

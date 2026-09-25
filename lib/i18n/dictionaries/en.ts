@@ -97,6 +97,13 @@ const en = {
     photoAlt: "Miguel Hernandez, REALTOR®",
     photoSoon: "Photo coming soon",
   },
+  areas: {
+    county: "{name} County",
+    eyebrow: "Areas Served",
+    title: "Rooted in Central Jersey",
+    body: "From the Raritan Bay waterfront to the heart of Middlesex County, I know these neighborhoods, the schools, the commutes, and what homes are really worth.",
+    ask: "Don't see your town? Let's talk",
+  },
 };
 
 export default en;

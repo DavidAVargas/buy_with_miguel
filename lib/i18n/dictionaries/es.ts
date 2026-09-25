@@ -100,6 +100,13 @@ const es: Dictionary = {
     photoAlt: "Miguel Hernandez, REALTOR®",
     photoSoon: "Foto próximamente",
   },
+  areas: {
+    county: "Condado de {name}",
+    eyebrow: "Áreas de Servicio",
+    title: "Arraigado en Central Jersey",
+    body: "Desde la costa de Raritan Bay hasta el corazón del condado de Middlesex, conozco estos vecindarios, las escuelas, los trayectos y lo que realmente valen las casas.",
+    ask: "¿No ves tu pueblo? Hablemos",
+  },
 };
 
 export default es;
