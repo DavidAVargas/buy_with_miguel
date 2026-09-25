@@ -5,6 +5,7 @@ import { getDictionary, hasLocale, locales } from "@/lib/i18n";
 import TopBar from "@/components/_blocks/header/top-bar";
 import Header from "@/components/_blocks/header/header";
 import Footer from "@/components/_blocks/footer/footer";
+import CallBar from "@/components/_blocks/call-bar/call-bar";
 import "@/styles/globals.css";
 
 export function generateStaticParams() {
@@ -35,11 +36,12 @@ export default async function RootLayout({
 
   return (
     <html lang={lang}>
-      <body className={`${inter.variable} ${cormorant.variable}`}>
+      <body className={`${inter.variable} ${cormorant.variable} pb-16 lg:pb-0`}>
         <TopBar dict={dict.topbar} />
         <Header lang={lang} dict={dict.nav} />
         <main>{children}</main>
         <Footer />
+        <CallBar dict={dict.callBar} />
       </body>
     </html>
   );

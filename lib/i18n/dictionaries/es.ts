@@ -107,6 +107,39 @@ const es: Dictionary = {
     body: "Desde la costa de Raritan Bay hasta el corazón del condado de Middlesex, conozco estos vecindarios, las escuelas, los trayectos y lo que realmente valen las casas.",
     ask: "¿No ves tu pueblo? Hablemos",
   },
+  contact: {
+    eyebrow: "Hablemos",
+    title: "¿Listo para Dar el Paso?",
+    body: "Cuéntame un poco sobre lo que buscas y te responderé rápido, normalmente el mismo día. ¿Prefieres hablar ahora? Llama o textea cuando quieras.",
+    call: "Llamar",
+    text: "Textear",
+    email: "Correo",
+    languages: "Español e Inglés",
+    form: {
+      name: "Nombre Completo",
+      phone: "Teléfono",
+      email: "Correo Electrónico",
+      interest: "Quiero",
+      interests: {
+        buy: "Comprar",
+        sell: "Vender",
+        rent: "Rentar",
+        commercial: "Comercial",
+      },
+      message: "Mensaje",
+      messagePlaceholder:
+        "Cuéntame tus planes, tu tiempo o la casa que tienes en mente.",
+      submit: "Enviar Mensaje",
+      sending: "Enviando…",
+      success:
+        "¡Gracias! Tu mensaje fue enviado. Miguel se comunicará contigo pronto.",
+      error: "Hubo un problema al enviar tu mensaje. Por favor llama o textea.",
+    },
+  },
+  callBar: {
+    call: "Llamar",
+    text: "Textear",
+  },
 };
 
 export default es;

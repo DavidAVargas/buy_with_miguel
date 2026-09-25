@@ -104,6 +104,39 @@ const en = {
     body: "From the Raritan Bay waterfront to the heart of Middlesex County, I know these neighborhoods, the schools, the commutes, and what homes are really worth.",
     ask: "Don't see your town? Let's talk",
   },
+  contact: {
+    eyebrow: "Let's Talk",
+    title: "Ready to Make Your Move?",
+    body: "Tell me a little about what you're looking for and I'll get back to you quickly, usually the same day. Prefer to talk now? Call or text anytime.",
+    call: "Call",
+    text: "Text",
+    email: "Email",
+    languages: "English & Español",
+    form: {
+      name: "Full Name",
+      phone: "Phone",
+      email: "Email",
+      interest: "I'm looking to",
+      interests: {
+        buy: "Buy",
+        sell: "Sell",
+        rent: "Rent",
+        commercial: "Commercial",
+      },
+      message: "Message",
+      messagePlaceholder:
+        "Tell me about your plans, timeline, or the home you have in mind.",
+      submit: "Send Message",
+      sending: "Sending…",
+      success: "Thanks! Your message was sent. Miguel will be in touch soon.",
+      error:
+        "Something went wrong sending your message. Please call or text instead.",
+    },
+  },
+  callBar: {
+    call: "Call",
+    text: "Text",
+  },
 };
 
 export default en;
