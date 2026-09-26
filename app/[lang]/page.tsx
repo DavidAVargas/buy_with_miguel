@@ -6,6 +6,7 @@ import RecentSales from "@/components/_blocks/recent-sales/recent-sales";
 import About from "@/components/_blocks/about/about";
 import Areas from "@/components/_blocks/areas/areas";
 import Contact from "@/components/_blocks/contact/contact";
+import AgentJsonLd from "@/components/seo/agent-json-ld";
 
 export default async function Home({ params }: PageProps<"/[lang]">) {
   const { lang } = await params;
@@ -14,6 +15,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
 
   return (
     <>
+      <AgentJsonLd lang={lang} description={dict.meta.description} />
       <Hero dict={dict.hero} />
       <Services dict={dict.services} />
       <RecentSales lang={lang} dict={dict.sold} />

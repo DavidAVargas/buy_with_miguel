@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { cormorant, inter } from "@/utils/fonts";
-import { getDictionary, hasLocale, locales } from "@/lib/i18n";
+import { defaultLocale, getDictionary, hasLocale, locales } from "@/lib/i18n";
+import { site } from "@/lib/site";
 import TopBar from "@/components/_blocks/header/top-bar";
 import Header from "@/components/_blocks/header/header";
 import Footer from "@/components/_blocks/footer/footer";
@@ -20,9 +21,24 @@ export async function generateMetadata({
 
   const { meta } = getDictionary(lang);
   return {
+    metadataBase: new URL(site.url),
     title: meta.title,
     description: meta.description,
-    alternates: { languages: { en: "/en", es: "/es" } },
+    alternates: {
+      canonical: `/${lang}`,
+      languages: {
+        ...Object.fromEntries(locales.map((l) => [l, `/${l}`])),
+        "x-default": `/${defaultLocale}`,
+      },
+    },
+    openGraph: {
+      type: "website",
+      url: `/${lang}`,
+      siteName: `${site.name}, ${site.title}`,
+      title: meta.title,
+      description: meta.description,
+      locale: lang === "es" ? "es_US" : "en_US",
+    },
   };
 }
 

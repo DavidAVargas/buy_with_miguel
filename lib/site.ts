@@ -1,6 +1,8 @@
 // Single source of truth for Miguel's contact + brokerage details.
 // TODO: replace placeholder phone, email, and license once received.
 export const site = {
+  // Set NEXT_PUBLIC_SITE_URL once a custom domain is connected.
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://buy-with-miguel.vercel.app",
   name: "Miguel Hernandez",
   title: "REALTOR®",
   brokerage: "Halo Realty",
