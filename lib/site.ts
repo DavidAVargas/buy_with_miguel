@@ -12,8 +12,7 @@ export const site = {
   smsHref: "sms:+17325550100",
   email: "hello@buywithmiguel.com",
   license: "NJ License #0000000",
-  // Drop the photo in public/images/ and set e.g. "/images/miguel.jpg".
-  headshot: null as string | null,
+  headshot: "/images/miguel.jpg" as string | null,
   state: "New Jersey",
   social: {
     instagram: "https://www.instagram.com/buywithmiguel",

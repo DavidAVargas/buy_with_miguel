@@ -20,7 +20,7 @@ export default function About({ dict }: { dict: Dictionary["about"] }) {
                 alt={dict.photoAlt}
                 fill
                 sizes="(min-width: 1024px) 40vw, 90vw"
-                className="object-cover"
+                className="object-cover object-top"
               />
             ) : (
               <div className="flex h-full flex-col items-center justify-center gap-4 text-white">
