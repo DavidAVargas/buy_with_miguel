@@ -14,7 +14,7 @@ A bilingual (English / EspaÃ±ol) marketing site for **Miguel Hernandez, REALTORÂ
 
 - **Bilingual routing:** `/en` and `/es` pages, statically generated. Visitors are redirected by their browser language.
 - **Lead-focused layout:** hero, services, recent sales, about, areas served, and a contact form. Every call to action leads to the form.
-- **Contact form:** submissions are emailed via [Web3Forms](https://web3forms.com), with a honeypot for spam and a call/text fallback on error.
+- **One-tap email:** Buy / Sell / Rent / Commercial buttons open the visitor's email app with a pre-filled subject and template, so leads arrive with the right details and no form backend is needed.
 - **Mobile call bar:** always-visible Call / Text buttons on phones, since most traffic comes from Instagram and TikTok.
 - **NJ advertising compliance:** brokerage name, license number, and Equal Housing Opportunity in the footer.
 - **Single source of truth:** contact details, listings, and all copy live in plain data files, so updates don't touch components.
@@ -35,15 +35,6 @@ pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000).
-
-### Environment Variables
-
-Create `.env.local`:
-
-```bash
-# Free key from https://web3forms.com; leads are emailed to the address it's tied to.
-NEXT_PUBLIC_WEB3FORMS_KEY=your-access-key
-```
 
 ## Editing Content
 

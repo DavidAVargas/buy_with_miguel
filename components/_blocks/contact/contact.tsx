@@ -1,7 +1,7 @@
 import { Languages, Mail, MessageCircle, Phone } from "lucide-react";
 import { site } from "@/lib/site";
 import type { Dictionary } from "@/lib/i18n";
-import ContactForm from "./contact-form";
+import EmailCard from "./email-card";
 
 export default function Contact({ dict }: { dict: Dictionary["contact"] }) {
   const methods = [
@@ -61,7 +61,7 @@ export default function Contact({ dict }: { dict: Dictionary["contact"] }) {
           </ul>
         </div>
 
-        <ContactForm dict={dict.form} />
+        <EmailCard dict={dict.emailCard} />
       </div>
     </section>
   );

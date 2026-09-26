@@ -113,25 +113,45 @@ const en = {
     text: "Text",
     email: "Email",
     languages: "English & Español",
-    form: {
-      name: "Full Name",
-      phone: "Phone",
-      email: "Email",
-      interest: "I'm looking to",
-      interests: {
-        buy: "Buy",
-        sell: "Sell",
-        rent: "Rent",
-        commercial: "Commercial",
+    emailCard: {
+      title: "What can I help with?",
+      subtitle:
+        "Pick one and a short email is ready to send. Just add your name and number.",
+      general: "Send a General Email",
+      note: "Prefer to talk? Call or text anytime.",
+      sendWith: "Send with",
+      gmail: "Gmail",
+      outlook: "Outlook",
+      app: "Email App",
+      copy: "Copy Email",
+      copied: "Copied!",
+      greeting: "Hi Miguel,",
+      fields: "Name:\nPhone:\nBest time to reach me:",
+      closing: "Thanks!",
+      topics: {
+        buy: {
+          label: "Buy",
+          subject: "Buying a home – website inquiry",
+          intro: "I'm interested in buying a home.",
+        },
+        sell: {
+          label: "Sell",
+          subject: "Selling my home – website inquiry",
+          intro: "I'm thinking about selling my home. The address is:",
+        },
+        rent: {
+          label: "Rent",
+          subject: "Looking to rent – website inquiry",
+          intro: "I'm looking for a rental.",
+        },
+        commercial: {
+          label: "Commercial",
+          subject: "Commercial property – website inquiry",
+          intro: "I have a question about a commercial property.",
+        },
       },
-      message: "Message",
-      messagePlaceholder:
-        "Tell me about your plans, timeline, or the home you have in mind.",
-      submit: "Send Message",
-      sending: "Sending…",
-      success: "Thanks! Your message was sent. Miguel will be in touch soon.",
-      error:
-        "Something went wrong sending your message. Please call or text instead.",
+      generalSubject: "Website inquiry",
+      generalIntro: "I have a question about real estate.",
     },
   },
   callBar: {

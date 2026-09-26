@@ -116,25 +116,45 @@ const es: Dictionary = {
     text: "Textear",
     email: "Correo",
     languages: "Español e Inglés",
-    form: {
-      name: "Nombre Completo",
-      phone: "Teléfono",
-      email: "Correo Electrónico",
-      interest: "Quiero",
-      interests: {
-        buy: "Comprar",
-        sell: "Vender",
-        rent: "Rentar",
-        commercial: "Comercial",
+    emailCard: {
+      title: "¿En qué te puedo ayudar?",
+      subtitle:
+        "Elige una opción y tendrás un correo listo para enviar. Solo agrega tu nombre y número.",
+      general: "Enviar un Correo General",
+      note: "¿Prefieres hablar? Llama o textea cuando quieras.",
+      sendWith: "Enviar con",
+      gmail: "Gmail",
+      outlook: "Outlook",
+      app: "App de Correo",
+      copy: "Copiar Correo",
+      copied: "¡Copiado!",
+      greeting: "Hola Miguel,",
+      fields: "Nombre:\nTeléfono:\nMejor hora para contactarme:",
+      closing: "¡Gracias!",
+      topics: {
+        buy: {
+          label: "Comprar",
+          subject: "Comprar una casa – consulta del sitio web",
+          intro: "Me interesa comprar una casa.",
+        },
+        sell: {
+          label: "Vender",
+          subject: "Vender mi casa – consulta del sitio web",
+          intro: "Estoy pensando en vender mi casa. La dirección es:",
+        },
+        rent: {
+          label: "Rentar",
+          subject: "Busco rentar – consulta del sitio web",
+          intro: "Estoy buscando una renta.",
+        },
+        commercial: {
+          label: "Comercial",
+          subject: "Propiedad comercial – consulta del sitio web",
+          intro: "Tengo una pregunta sobre una propiedad comercial.",
+        },
       },
-      message: "Mensaje",
-      messagePlaceholder:
-        "Cuéntame tus planes, tu tiempo o la casa que tienes en mente.",
-      submit: "Enviar Mensaje",
-      sending: "Enviando…",
-      success:
-        "¡Gracias! Tu mensaje fue enviado. Miguel se comunicará contigo pronto.",
-      error: "Hubo un problema al enviar tu mensaje. Por favor llama o textea.",
+      generalSubject: "Consulta del sitio web",
+      generalIntro: "Tengo una pregunta sobre bienes raíces.",
     },
   },
   callBar: {
