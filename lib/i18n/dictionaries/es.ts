@@ -28,6 +28,7 @@ const es: Dictionary = {
     primaryCta: "Hablemos",
     secondaryCta: "¿Cuánto Vale Mi Casa?",
     imageAlt: "Casa clásica de New Jersey con porche y jardín",
+    agentAlt: "Miguel Hernandez, tu REALTOR® en Central Jersey",
     highlights: [
       "Residencial y Comercial",
       "Compradores · Vendedores · Inquilinos",

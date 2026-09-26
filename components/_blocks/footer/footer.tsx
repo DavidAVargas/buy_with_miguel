@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Instagram } from "lucide-react";
 import { site } from "@/lib/site";
@@ -21,7 +22,16 @@ export default function Footer({ lang, dict }: FooterProps) {
     <footer className="bg-ink text-white">
       <div className="mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:grid-cols-2 sm:px-6 lg:grid-cols-[2fr_1fr_1fr_1.3fr] lg:px-8 lg:py-20">
         <div>
-          <Link href={`/${lang}`} className="flex items-center gap-3">
+          <Link href={`/${lang}`} className="flex items-center gap-4">
+            {site.headshot && (
+              <Image
+                src={site.headshot}
+                alt={site.name}
+                width={56}
+                height={56}
+                className="ring-gold-light ring-offset-ink ml-1 size-14 rounded-full object-cover object-top ring-2 ring-offset-2"
+              />
+            )}
             <span className="font-display text-3xl leading-none">MH</span>
             <span className="bg-gold-light h-8 w-px" aria-hidden="true" />
             <span className="flex flex-col leading-tight">

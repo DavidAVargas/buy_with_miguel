@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import { site } from "@/lib/site";
 import type { Dictionary } from "@/lib/i18n";
 import { Button } from "@/components/button/button";
 
@@ -43,6 +44,24 @@ export default function Hero({ dict }: { dict: Dictionary["hero"] }) {
                 />
               </a>
             </div>
+
+            {site.headshot && (
+              <div className="border-border mt-12 flex items-center gap-4 border-t pt-8">
+                <Image
+                  src={site.headshot}
+                  alt={dict.agentAlt}
+                  width={56}
+                  height={56}
+                  className="ring-gold-light ml-1 size-14 rounded-full object-cover object-top ring-2 ring-offset-2"
+                />
+                <div className="leading-tight">
+                  <p className="font-semibold">{site.name}</p>
+                  <p className="text-muted-foreground mt-1 text-xs tracking-[0.2em] uppercase">
+                    {site.title} · {site.brokerage}
+                  </p>
+                </div>
+              </div>
+            )}
           </div>
         </div>
 

@@ -26,6 +26,7 @@ const en = {
     primaryCta: "Let's Talk",
     secondaryCta: "What's My Home Worth?",
     imageAlt: "Classic New Jersey home with a front porch and landscaped yard",
+    agentAlt: "Miguel Hernandez, your Central Jersey REALTOR®",
     highlights: [
       "Residential & Commercial",
       "Buyers · Sellers · Renters",
