@@ -1,5 +1,5 @@
 // Single source of truth for Miguel's contact + brokerage details.
-// TODO: replace placeholder phone, email, and license once received.
+// TODO: replace placeholder license number once received.
 export const site = {
   // Set NEXT_PUBLIC_SITE_URL once a custom domain is connected.
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://buy-with-miguel.vercel.app",
@@ -7,10 +7,10 @@ export const site = {
   title: "REALTOR®",
   brokerage: "Halo Realty",
   team: "Key Move Real Estate Group",
-  phone: "(732) 555-0100",
-  phoneHref: "tel:+17325550100",
-  smsHref: "sms:+17325550100",
-  email: "hello@buywithmiguel.com",
+  phone: "(848) 242-0054",
+  phoneHref: "tel:+18482420054",
+  smsHref: "sms:+18482420054",
+  email: "buywithmiguel@gmail.com",
   license: "NJ License #0000000",
   headshot: "/images/miguel.jpg" as string | null,
   state: "New Jersey",
