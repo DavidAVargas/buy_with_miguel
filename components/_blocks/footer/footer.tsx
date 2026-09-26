@@ -5,6 +5,7 @@ import { site } from "@/lib/site";
 import type { Dictionary, Locale } from "@/lib/i18n";
 import TikTokIcon from "@/components/icons/tiktok";
 import EqualHousingIcon from "@/components/icons/equal-housing";
+import BrokerageLogo from "@/components/brokerage-logo";
 
 type FooterProps = {
   lang: Locale;
@@ -109,7 +110,7 @@ export default function Footer({ lang, dict }: FooterProps) {
 
         <div>
           <h3 className={headingClass}>{t.brokerage}</h3>
-          <p className="font-display mt-5 text-2xl">{site.brokerage}</p>
+          <BrokerageLogo className="mt-5 block h-20" />
           <p className="mt-1 text-sm text-white/70">{site.team}</p>
           <p className="mt-3 text-sm text-white/50">{site.license}</p>
           <div className="mt-6 flex items-center gap-3 text-white/70">

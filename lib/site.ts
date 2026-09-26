@@ -6,6 +6,7 @@ export const site = {
   name: "Miguel Hernandez",
   title: "REALTOR®",
   brokerage: "Halo Realty",
+  brokerageLogo: "/images/halo-realty.png" as string | null,
   team: "Key Move Real Estate Group",
   phone: "(848) 242-0054",
   phoneHref: "tel:+18482420054",

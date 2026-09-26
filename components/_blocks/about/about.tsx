@@ -3,6 +3,7 @@ import { Check, Phone } from "lucide-react";
 import { site } from "@/lib/site";
 import type { Dictionary } from "@/lib/i18n";
 import { Button } from "@/components/button/button";
+import BrokerageLogo from "@/components/brokerage-logo";
 
 export default function About({ dict }: { dict: Dictionary["about"] }) {
   return (
@@ -68,7 +69,9 @@ export default function About({ dict }: { dict: Dictionary["about"] }) {
               <dt className="text-muted-foreground text-xs tracking-[0.2em] uppercase">
                 {dict.brokerage}
               </dt>
-              <dd className="font-display mt-1 text-xl">{site.brokerage}</dd>
+              <dd className="mt-2">
+                <BrokerageLogo className="h-16" />
+              </dd>
             </div>
             <div>
               <dt className="text-muted-foreground text-xs tracking-[0.2em] uppercase">
