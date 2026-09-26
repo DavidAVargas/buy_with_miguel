@@ -53,7 +53,12 @@ export default async function RootLayout({
 
   return (
     <html lang={lang}>
-      <body className={`${inter.variable} ${cormorant.variable} pb-16 lg:pb-0`}>
+      {/* Extensions like Grammarly add attributes to <body> before React
+          loads; this ignores those on <body> only, not its children. */}
+      <body
+        className={`${inter.variable} ${cormorant.variable} pb-16 lg:pb-0`}
+        suppressHydrationWarning
+      >
         <TopBar dict={dict.topbar} />
         <Header lang={lang} dict={dict.nav} />
         <main>{children}</main>
