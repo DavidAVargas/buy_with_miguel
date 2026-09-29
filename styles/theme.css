@@ -13,12 +13,14 @@
   --destructive: oklch(0.577 0.245 27.325);
   --border: #e7e2da;
   --input: #d9d3c9;
-  --ring: #8a7352;
+  /* Focus outline; dark sections override it with gold-light. */
+  --ring: #6f5c40;
 
   /* Brand */
   --ink: #141414;
   --cream: #f7f4ef;
-  --gold: #8a7352;
+  /* Darkened from #8a7352 so gold text passes WCAG AA (4.5:1) on cream. */
+  --gold: #7f6a4b;
   --gold-dark: #6f5c40;
   --gold-light: #c9b79c;
 }

@@ -5,7 +5,7 @@ import { join } from "node:path";
 // variables or woff2 fonts.
 export const brand = {
   ink: "#141414",
-  gold: "#8a7352",
+  gold: "#7f6a4b",
   goldLight: "#c9b79c",
   white: "#ffffff",
 };

@@ -12,14 +12,14 @@ export default function CallBar({ dict }: { dict: Dictionary["callBar"] }) {
     >
       <a
         href={site.phoneHref}
-        className="flex items-center justify-center gap-2 text-xs font-semibold tracking-[0.2em] uppercase"
+        className="flex items-center justify-center gap-2 text-xs font-semibold tracking-[0.2em] uppercase focus-visible:-outline-offset-4 focus-visible:outline-white"
       >
         <Phone className="size-4" aria-hidden="true" />
         {dict.call}
       </a>
       <a
         href={site.smsHref}
-        className="bg-gold flex items-center justify-center gap-2 text-xs font-semibold tracking-[0.2em] uppercase"
+        className="bg-gold flex items-center justify-center gap-2 text-xs font-semibold tracking-[0.2em] uppercase focus-visible:-outline-offset-4 focus-visible:outline-white"
       >
         <MessageCircle className="size-4" aria-hidden="true" />
         {dict.text}

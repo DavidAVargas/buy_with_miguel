@@ -12,8 +12,11 @@
     scroll-padding-top: 5rem;
     scroll-behavior: smooth;
   }
-  * {
-    @apply outline-ring/50;
+  /* One visible keyboard focus style for every element. Sections on the
+     dark ink background set --ring to gold-light so it stays visible. */
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
   }
   body {
     @apply font-body bg-background text-foreground antialiased;

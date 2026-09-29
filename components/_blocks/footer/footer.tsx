@@ -20,7 +20,7 @@ export default function Footer({ lang, dict }: FooterProps) {
   const t = dict.footer;
 
   return (
-    <footer className="bg-ink text-white">
+    <footer className="bg-ink text-white [--ring:var(--gold-light)]">
       <div className="mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:grid-cols-2 sm:px-6 lg:grid-cols-[2fr_1fr_1fr_1.3fr] lg:px-8 lg:py-20">
         <div>
           <Link href={`/${lang}`} className="flex items-center gap-4">

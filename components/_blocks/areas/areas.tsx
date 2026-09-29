@@ -7,7 +7,7 @@ export default function Areas({ dict }: { dict: Dictionary["areas"] }) {
     <section
       id="areas"
       aria-labelledby="areas-title"
-      className="bg-ink py-20 text-white sm:py-28"
+      className="bg-ink py-20 text-white [--ring:var(--gold-light)] sm:py-28"
     >
       <div className="mx-auto grid max-w-7xl gap-14 px-4 sm:px-6 lg:grid-cols-[2fr_3fr] lg:gap-24 lg:px-8">
         <div>

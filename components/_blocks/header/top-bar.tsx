@@ -10,7 +10,10 @@ type TopBarProps = {
 
 export default function TopBar({ lang, dict }: TopBarProps) {
   return (
-    <aside aria-label={dict.label} className="bg-ink text-white/85">
+    <aside
+      aria-label={dict.label}
+      className="bg-ink text-white/85 [--ring:var(--gold-light)]"
+    >
       <div className="mx-auto flex h-10 max-w-7xl items-center justify-between gap-4 px-4 text-xs sm:px-6 lg:px-8">
         <div className="flex items-center gap-5">
           <a
