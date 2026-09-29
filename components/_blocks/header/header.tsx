@@ -15,7 +15,10 @@ export default function Header({ lang, dict }: HeaderProps) {
     <header className="border-border bg-background/95 sticky top-0 z-50 border-b backdrop-blur">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-6 px-4 sm:px-6 lg:px-8">
         <Link href={`/${lang}`} className="flex items-center gap-3">
-          <span className="font-display text-foreground text-3xl leading-none">
+          <span
+            className="font-display text-foreground text-3xl leading-none"
+            aria-hidden="true"
+          >
             MH
           </span>
           <span className="bg-gold-light h-8 w-px" aria-hidden="true" />

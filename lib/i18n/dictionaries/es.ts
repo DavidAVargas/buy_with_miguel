@@ -20,8 +20,7 @@ const es: Dictionary = {
     contact: "Contacto",
     mainNav: "Principal",
     skipToContent: "Saltar al contenido principal",
-    openMenu: "Abrir menú",
-    closeMenu: "Cerrar menú",
+    menu: "Menú",
     switchLanguage: "View in English",
   },
   hero: {

@@ -18,8 +18,7 @@ const en = {
     contact: "Contact",
     mainNav: "Main",
     skipToContent: "Skip to main content",
-    openMenu: "Open menu",
-    closeMenu: "Close menu",
+    menu: "Menu",
     switchLanguage: "Ver en español",
   },
   hero: {

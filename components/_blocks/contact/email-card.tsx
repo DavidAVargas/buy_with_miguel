@@ -111,42 +111,46 @@ export default function EmailCard({ dict }: { dict: EmailCardDict }) {
         {dict.general}
       </Button>
 
-      {active && (
-        <div className="bg-cream mt-6 p-5" role="region" aria-live="polite">
-          <p className="text-muted-foreground text-xs font-semibold tracking-[0.2em] uppercase">
-            {dict.sendWith}
-          </p>
-          <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4">
-            <a
-              href={active.gmail}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={optionClass}
-            >
-              {dict.gmail}
-            </a>
-            <a
-              href={active.outlook}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={optionClass}
-            >
-              {dict.outlook}
-            </a>
-            <a href={active.app} className={optionClass}>
-              {dict.app}
-            </a>
-            <button type="button" onClick={copyEmail} className={optionClass}>
-              {copied ? (
-                <Check className="text-gold size-4" aria-hidden="true" />
-              ) : (
-                <Copy className="size-4" aria-hidden="true" />
-              )}
-              {copied ? dict.copied : dict.copy}
-            </button>
+      {/* The live region stays mounted so screen readers announce the
+          options when they appear and "Copied" after copying. */}
+      <div aria-live="polite">
+        {active && (
+          <div className="bg-cream mt-6 p-5">
+            <p className="text-muted-foreground text-xs font-semibold tracking-[0.2em] uppercase">
+              {dict.sendWith}
+            </p>
+            <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4">
+              <a
+                href={active.gmail}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={optionClass}
+              >
+                {dict.gmail}
+              </a>
+              <a
+                href={active.outlook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={optionClass}
+              >
+                {dict.outlook}
+              </a>
+              <a href={active.app} className={optionClass}>
+                {dict.app}
+              </a>
+              <button type="button" onClick={copyEmail} className={optionClass}>
+                {copied ? (
+                  <Check className="text-gold size-4" aria-hidden="true" />
+                ) : (
+                  <Copy className="size-4" aria-hidden="true" />
+                )}
+                {copied ? dict.copied : dict.copy}
+              </button>
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
 
       <p className="text-muted-foreground mt-6 text-center text-sm">
         {dict.note}{" "}

@@ -106,8 +106,8 @@ export default function MobileMenu({ lang, dict }: MobileMenuProps) {
         type="button"
         onClick={() => (open ? close() : setOpen(true))}
         aria-expanded={open}
-        aria-controls="mobile-menu"
-        aria-label={open ? dict.closeMenu : dict.openMenu}
+        aria-controls={open ? "mobile-menu" : undefined}
+        aria-label={dict.menu}
         className="text-foreground -mr-2 p-2"
       >
         {open ? (
