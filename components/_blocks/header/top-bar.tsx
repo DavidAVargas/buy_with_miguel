@@ -1,11 +1,16 @@
 import { Instagram, Mail, Phone } from "lucide-react";
 import { site } from "@/lib/site";
-import type { Dictionary } from "@/lib/i18n";
+import type { Dictionary, Locale } from "@/lib/i18n";
 import TikTokIcon from "@/components/icons/tiktok";
 
-export default function TopBar({ dict }: { dict: Dictionary["topbar"] }) {
+type TopBarProps = {
+  lang: Locale;
+  dict: Dictionary["topbar"];
+};
+
+export default function TopBar({ lang, dict }: TopBarProps) {
   return (
-    <div className="bg-ink text-white/85">
+    <aside aria-label={dict.label} className="bg-ink text-white/85">
       <div className="mx-auto flex h-10 max-w-7xl items-center justify-between gap-4 px-4 text-xs sm:px-6 lg:px-8">
         <div className="flex items-center gap-5">
           <a
@@ -25,7 +30,10 @@ export default function TopBar({ dict }: { dict: Dictionary["topbar"] }) {
         </div>
 
         <div className="flex items-center gap-4">
-          <span className="text-gold-light hidden tracking-wide md:inline">
+          <span
+            lang={lang === "en" ? "es" : "en"}
+            className="text-gold-light hidden tracking-wide md:inline"
+          >
             {dict.language}
           </span>
           <a
@@ -48,6 +56,6 @@ export default function TopBar({ dict }: { dict: Dictionary["topbar"] }) {
           </a>
         </div>
       </div>
-    </div>
+    </aside>
   );
 }

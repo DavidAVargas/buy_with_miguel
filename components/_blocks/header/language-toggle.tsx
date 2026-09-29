@@ -19,6 +19,8 @@ export default function LanguageToggle({
             <Link
               href={`/${locale}`}
               aria-label={label}
+              lang={locale}
+              hrefLang={locale}
               className="text-muted-foreground hover:text-gold transition-colors"
             >
               {locale.toUpperCase()}

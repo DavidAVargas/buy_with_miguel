@@ -18,14 +18,17 @@ export default function RecentSales({ lang, dict }: RecentSalesProps) {
   });
 
   return (
-    <section id="sold" className="py-20 sm:py-28">
+    <section id="sold" aria-labelledby="sold-title" className="py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div className="max-w-xl">
             <p className="text-gold text-xs font-semibold tracking-[0.25em] uppercase">
               {dict.eyebrow}
             </p>
-            <h2 className="font-display mt-4 text-4xl sm:text-5xl">
+            <h2
+              id="sold-title"
+              className="font-display mt-4 text-4xl sm:text-5xl"
+            >
               {dict.title}
             </h2>
             <p className="text-muted-foreground mt-5 text-lg leading-relaxed">

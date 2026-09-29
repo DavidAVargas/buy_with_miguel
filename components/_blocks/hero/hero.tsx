@@ -10,14 +10,17 @@ const FEATURE = "https://images.unsplash.com/photo-1570129477492-45c003edd2be";
 
 export default function Hero({ dict }: { dict: Dictionary["hero"] }) {
   return (
-    <section>
+    <section aria-labelledby="hero-title">
       <div className="grid lg:min-h-[calc(100svh-7.5rem)] lg:grid-cols-[1.1fr_1fr]">
         <div className="flex items-center px-4 py-16 sm:px-6 lg:py-24 lg:pr-16 lg:pl-[max(2rem,calc((100vw-80rem)/2+2rem))]">
           <div className="max-w-xl">
             <p className="text-gold text-xs font-semibold tracking-[0.25em] uppercase">
               {dict.eyebrow}
             </p>
-            <h1 className="font-display text-foreground mt-6 text-5xl leading-[1.05] sm:text-6xl xl:text-7xl">
+            <h1
+              id="hero-title"
+              className="font-display text-foreground mt-6 text-5xl leading-[1.05] sm:text-6xl xl:text-7xl"
+            >
               {dict.title}
             </h1>
             <p className="text-muted-foreground mt-6 text-lg leading-relaxed">

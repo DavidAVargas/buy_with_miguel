@@ -5,6 +5,7 @@ const en = {
       "Buy, sell, or rent in Central New Jersey with Miguel Hernandez, a bilingual REALTOR® with Halo Realty serving Perth Amboy, South Amboy, and surrounding towns.",
   },
   topbar: {
+    label: "Contact and social links",
     language: "Se habla español",
   },
   nav: {
@@ -15,6 +16,8 @@ const en = {
       { label: "Areas", href: "#areas" },
     ],
     contact: "Contact",
+    mainNav: "Main",
+    skipToContent: "Skip to main content",
     openMenu: "Open menu",
     closeMenu: "Close menu",
     switchLanguage: "Ver en español",
@@ -155,6 +158,7 @@ const en = {
     },
   },
   callBar: {
+    label: "Call or text Miguel",
     call: "Call",
     text: "Text",
   },

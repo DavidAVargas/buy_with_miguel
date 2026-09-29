@@ -7,6 +7,7 @@ const es: Dictionary = {
       "Compra, vende o renta en Central New Jersey con Miguel Hernandez, REALTOR® bilingüe con Halo Realty, sirviendo a Perth Amboy, South Amboy y pueblos cercanos.",
   },
   topbar: {
+    label: "Contacto y redes sociales",
     language: "We speak English",
   },
   nav: {
@@ -17,6 +18,8 @@ const es: Dictionary = {
       { label: "Áreas", href: "#areas" },
     ],
     contact: "Contacto",
+    mainNav: "Principal",
+    skipToContent: "Saltar al contenido principal",
     openMenu: "Abrir menú",
     closeMenu: "Cerrar menú",
     switchLanguage: "View in English",
@@ -158,6 +161,7 @@ const es: Dictionary = {
     },
   },
   callBar: {
+    label: "Llama o textea a Miguel",
     call: "Llamar",
     text: "Textear",
   },

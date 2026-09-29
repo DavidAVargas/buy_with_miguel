@@ -7,7 +7,11 @@ import BrokerageLogo from "@/components/brokerage-logo";
 
 export default function About({ dict }: { dict: Dictionary["about"] }) {
   return (
-    <section id="about" className="bg-cream py-20 sm:py-28">
+    <section
+      id="about"
+      aria-labelledby="about-title"
+      className="bg-cream py-20 sm:py-28"
+    >
       <div className="mx-auto grid max-w-7xl items-center gap-16 px-4 sm:px-6 lg:grid-cols-2 lg:gap-24 lg:px-8">
         <div className="relative mx-auto w-[calc(100%-1rem)] max-w-md sm:w-full lg:max-w-none">
           <div
@@ -40,7 +44,10 @@ export default function About({ dict }: { dict: Dictionary["about"] }) {
           <p className="text-gold text-xs font-semibold tracking-[0.25em] uppercase">
             {dict.eyebrow}
           </p>
-          <h2 className="font-display mt-4 text-4xl sm:text-5xl">
+          <h2
+            id="about-title"
+            className="font-display mt-4 text-4xl sm:text-5xl"
+          >
             {dict.title}
           </h2>
           <div className="text-muted-foreground mt-6 space-y-4 text-lg leading-relaxed">

@@ -6,7 +6,10 @@ import type { Dictionary } from "@/lib/i18n";
 // from Instagram and TikTok).
 export default function CallBar({ dict }: { dict: Dictionary["callBar"] }) {
   return (
-    <div className="bg-ink fixed inset-x-0 bottom-0 z-40 grid h-16 grid-cols-2 pb-[env(safe-area-inset-bottom)] text-white lg:hidden">
+    <aside
+      aria-label={dict.label}
+      className="bg-ink fixed inset-x-0 bottom-0 z-40 grid h-16 grid-cols-2 pb-[env(safe-area-inset-bottom)] text-white lg:hidden"
+    >
       <a
         href={site.phoneHref}
         className="flex items-center justify-center gap-2 text-xs font-semibold tracking-[0.2em] uppercase"
@@ -21,6 +24,6 @@ export default function CallBar({ dict }: { dict: Dictionary["callBar"] }) {
         <MessageCircle className="size-4" aria-hidden="true" />
         {dict.text}
       </a>
-    </div>
+    </aside>
   );
 }

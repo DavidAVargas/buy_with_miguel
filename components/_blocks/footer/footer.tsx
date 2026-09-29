@@ -70,8 +70,10 @@ export default function Footer({ lang, dict }: FooterProps) {
           </div>
         </div>
 
-        <div>
-          <h3 className={headingClass}>{t.explore}</h3>
+        <nav aria-labelledby="footer-explore">
+          <h2 id="footer-explore" className={headingClass}>
+            {t.explore}
+          </h2>
           <ul className="mt-5 space-y-3 text-sm">
             {dict.nav.links.map((link) => (
               <li key={link.href}>
@@ -86,10 +88,10 @@ export default function Footer({ lang, dict }: FooterProps) {
               </a>
             </li>
           </ul>
-        </div>
+        </nav>
 
         <div>
-          <h3 className={headingClass}>{t.contact}</h3>
+          <h2 className={headingClass}>{t.contact}</h2>
           <ul className="mt-5 space-y-3 text-sm">
             <li>
               <a href={site.phoneHref} className={linkClass}>
@@ -109,7 +111,7 @@ export default function Footer({ lang, dict }: FooterProps) {
         </div>
 
         <div>
-          <h3 className={headingClass}>{t.brokerage}</h3>
+          <h2 className={headingClass}>{t.brokerage}</h2>
           <BrokerageLogo className="mt-5 block h-20" />
           <p className="mt-1 text-sm text-white/70">{site.team}</p>
           <p className="mt-3 text-sm text-white/50">{site.license}</p>

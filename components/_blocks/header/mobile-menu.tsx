@@ -124,6 +124,7 @@ export default function MobileMenu({ lang, dict }: MobileMenuProps) {
         >
           {/* Any link (section, language, phone) closes the menu. */}
           <nav
+            aria-label={dict.mainNav}
             onClick={(event) => {
               if ((event.target as HTMLElement).closest("a")) close(false);
             }}

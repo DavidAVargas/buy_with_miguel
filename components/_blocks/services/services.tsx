@@ -12,13 +12,20 @@ type ServicesProps = { dict: Dictionary["services"] };
 
 export default function Services({ dict }: ServicesProps) {
   return (
-    <section id="services" className="bg-cream py-20 sm:py-28">
+    <section
+      id="services"
+      aria-labelledby="services-title"
+      className="bg-cream py-20 sm:py-28"
+    >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-gold text-xs font-semibold tracking-[0.25em] uppercase">
             {dict.eyebrow}
           </p>
-          <h2 className="font-display mt-4 text-4xl sm:text-5xl">
+          <h2
+            id="services-title"
+            className="font-display mt-4 text-4xl sm:text-5xl"
+          >
             {dict.title}
           </h2>
           <p className="text-muted-foreground mt-5 text-lg leading-relaxed">

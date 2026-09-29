@@ -29,7 +29,10 @@ export default function Header({ lang, dict }: HeaderProps) {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-8 lg:flex">
+        <nav
+          aria-label={dict.mainNav}
+          className="hidden items-center gap-8 lg:flex"
+        >
           {dict.links.map((link) => (
             <a
               key={link.href}

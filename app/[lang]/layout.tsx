@@ -59,9 +59,17 @@ export default async function RootLayout({
         className={`${inter.variable} ${cormorant.variable} pb-16 lg:pb-0`}
         suppressHydrationWarning
       >
-        <TopBar dict={dict.topbar} />
+        <a
+          href="#main"
+          className="focus:bg-ink sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[60] focus:px-5 focus:py-3 focus:text-sm focus:font-semibold focus:text-white"
+        >
+          {dict.nav.skipToContent}
+        </a>
+        <TopBar lang={lang} dict={dict.topbar} />
         <Header lang={lang} dict={dict.nav} />
-        <main>{children}</main>
+        <main id="main" tabIndex={-1} className="focus:outline-none">
+          {children}
+        </main>
         <Footer lang={lang} dict={dict} />
         <CallBar dict={dict.callBar} />
       </body>

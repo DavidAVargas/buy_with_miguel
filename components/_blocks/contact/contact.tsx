@@ -21,13 +21,20 @@ export default function Contact({ dict }: { dict: Dictionary["contact"] }) {
   ];
 
   return (
-    <section id="contact" className="bg-cream py-20 sm:py-28">
+    <section
+      id="contact"
+      aria-labelledby="contact-title"
+      className="bg-cream py-20 sm:py-28"
+    >
       <div className="mx-auto grid max-w-7xl gap-14 px-4 sm:px-6 lg:grid-cols-[2fr_3fr] lg:gap-20 lg:px-8">
         <div>
           <p className="text-gold text-xs font-semibold tracking-[0.25em] uppercase">
             {dict.eyebrow}
           </p>
-          <h2 className="font-display mt-4 text-4xl sm:text-5xl">
+          <h2
+            id="contact-title"
+            className="font-display mt-4 text-4xl sm:text-5xl"
+          >
             {dict.title}
           </h2>
           <p className="text-muted-foreground mt-6 text-lg leading-relaxed">
